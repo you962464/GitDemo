@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.zy.RabbitmqApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.839 s <<< FAILURE! - in com.zy.RabbitmqApplicationTests
+contextLoads  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bindingExchangeMessage' defined in com.zy.RabbitmqApplication: Unsatisfied dependency expressed through method 'bindingExchangeMessage' parameter 0; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.amqp.core.Queue' available: expected single matching bean but found 4: easyQuery,student,topicMsg1,topicMsg2
+Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.amqp.core.Queue' available: expected single matching bean but found 4: easyQuery,student,topicMsg1,topicMsg2
+
